@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: rockysantiago/netlify-cms-tutorial
+  branch: master # Branch to update
+
+media_folder: static/assets
+public_folder: assets
+
+collections:
+  - name: pages
+    label: Pages
+    folder: pages
+    create: true
+    editor:
+      preview: false
+    fields:
+      - name: 'home_en'
+        label: Home in English
+        widget: object
+        fields:
+          - name: heading
+            label: Heading
+      - name: 'home_zh'
+        label: Home in Chinese
+        widget: object
+        fields:
+          - name: heading
+            label: Heading
